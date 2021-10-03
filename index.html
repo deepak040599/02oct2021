@@ -29,12 +29,21 @@
         aside .accordian button{
             border-bottom: 1px solid #442460 !important;
         }
-        .active *{
-            color: #FFB900 !important;
-            border-left:  solid #FFB900;
-        }
+        
         input:focus{
             box-shadow: none !important;
+        }
+        .accordion-button{
+            border-left: 6px solid #492564 !important;
+
+        }
+        
+        .accordion-button:focus{
+            color: #FFB900 !important;
+            box-shadow: none;
+            border: none;
+            border-left: 6px solid #492564 !important;
+
         }
     </style>
 </head>
@@ -42,12 +51,12 @@
         <div class="container-fluid d_cont_fluid d_tbdr p-0 ">
             <header>
                 <div class="row m-0 h-100" >
-                    <div class="col-2 d_tbdr p-0">
+                    <div class="col-2 col-md-12 col-lg-2 d_tbdr p-0">
                         <a href="">
                             <img src="img/Group 496.svg" class="ms-3 mt-2">
                         </a>
                     </div>
-                    <div class="col-10 d_tbdr p-0">
+                    <div class="col-10 col-md-12 col-lg-10 d_tbdr p-0">
                         <form class="float-start">
                             <input type="search" class="border-0 mt-2 ms-3 form-control" placeholder="search and help ">
                         </form>
@@ -71,22 +80,22 @@
             <div class="d_main row  m-0 h-100">
                  <aside class="col-2 d_purple d_tbdr p-0">
                     <div class="accordion rounded-0" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item active border-0 rounded-0 ">
+                        <div class="accordion-item active  border-0 rounded-0 ">
                           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                             <button class="accordion-button d_ll_purple rounded-0 d_light_purple" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                              Client Dashboard
+                            <img src="img/chart-bar-32.svg" class="me-3">  Client Dashboard
                             </button>
                           </h2>
                           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body">
-                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              <strong>This is the first item's accordion body.</strong> 
                             </div>
                           </div>
                         </div>
                         <div class="accordion-item border-0 rounded-0">
                           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                             <button class="accordion-button collapsed d_ll_purple rounded-0 d_light_purple" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                              Solutions
+                                <img src="img/email-84.svg" class="me-3">   Solutions
                             </button>
                           </h2>
                           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -98,12 +107,25 @@
                         <div class="accordion-item border-0 rounded-0">
                           <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                             <button class="accordion-button collapsed d_ll_purple rounded-0 d_light_purple" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                              Payment History
+                                <img src="img/receipt-list-42.svg" class="me-3"> Payment History
                             </button>
                           </h2>
                           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                             <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                      <a class="nav-link " aria-current="page" href="#">Active</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </li>
+                                  </ul>
                             </div>
                           </div>
                         </div>
